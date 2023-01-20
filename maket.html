@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 1200px;
+            margin: 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .header{
+            height: 154px;
+            background-color: rgba(0, 0, 0, 0.466);
+            display: grid;
+            gap: 40px;
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+        .hd1{
+            display: grid;
+            height: 154px;
+            width: 224px;
+            justify-content: center;
+            align-content: center;
+        }
+        .hd2{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(5, auto);
+            align-content: center;
+            justify-content: center;
+        }
+        .hd3{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, auto);
+            align-content: center;
+            justify-content: center;
+        }        
+        .link{
+            color: white;
+            text-decoration: none;
+        }
+        .link:hover{
+            color: green;
+        }
+        #capusta{
+            margin-left: 50px;
+            margin-bottom: 5px;
+        }
+        #lock{
+            z-index: -1;
+            position: absolute;
+            transform: translate(0, -154px); 
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            height: 500px;
+        } 
+        .form{
+            width: 352px;
+            height: 389px;
+            margin-right: 40px;
+            margin-top: 40px;
+            background-color: rgba(0, 0, 0, 0.644);
+            color: white;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 40px;
+
+        }
+        [title=info]{
+            background-color: rgba(255, 255, 255, 0);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 252px;
+            font-size: 16px;
+            margin-top: 20px;
+            color: white;
+            text-align: center;
+        }
+        .form>h1{
+            font-size: 20px;
+            font-weight: 200;
+        }
+        #button{
+            margin-top: 40px;
+            background-color: RGBA(12, 200, 41, 1);
+            color: white;
+            width: 257px;
+            height: 38px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: .3s;
+        }
+        #button:hover{
+            width: 267px;
+            height: 48px;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .maintext{
+            font-size: 48px;
+            font-weight: 400;
+            color: black;
+            text-align: center;
+        }
+        .maintext1{
+            width: 472px;
+            height: 160px;
+            color: black;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: left;
+        }
+        .main>img{
+            margin-left: 115px;
+        }
+        .main>.maintext1>a{
+            color: green;
+            text-decoration: none;
+            margin-left: 55px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .container1{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 60px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            color: white;
+            margin-left: 100px;
+            margin-right: 100px;
+            text-shadow: black 2px 2px 5px ;
+        }
+        #planet{
+            width: 1200px;
+            height: 400px;
+            z-index: -1;
+            position: absolute;
+            transform: translate(0, -350px);
+        }
+        .white{
+            width: auto;
+            height: 500px;
+        }
+        .plnttxt{
+            font-size: 48px;
+            font-weight: 400;
+            color: white;
+            text-align: center;
+            margin-top: 200px;;
+        }
+        .container1>div>img{
+            max-height: 160px;
+        }
+        .footer{
+            height: 154px;
+            width: auto;
+            background-color: black;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 150px;
+            margin-top: 300px;
+            align-content: center;
+        }
+
+        .footer>div>p{
+            color: white;
+            float: right;
+            margin-right: 90px;
+        }
+        .ftr{
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+        .ftr1{
+            display: grid;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="hd1">
+            <img src="Слой 6.png" alt="" id="capusta">
+            <img src="Слой 1 копия.png" alt="">
+        </div>
+        <div class="hd2">
+            <a href="#" class="link">О нас</a>
+            <a href="#" class="link">Услуги</a>
+            <a href="#" class="link">Преимущества</a>
+            <a href="#" class="link">Отзывы</a>
+            <a href="#" class="link">Контакты</a>
+        </div>
+        <div class="hd3">
+            <a href=""><img src="Слой 2.png" alt=""></a>
+            <a href=""><img src="Слой 3.png" alt=""></a>
+            <a href=""><img src="Слой 4.png" alt=""></a>
+        </div>
+    </div>
+    <!-- Main -->
+    <img src="Слой 5 копия.png" alt="" id="lock">
+    <div class="container">
+        <div></div>
+        <div class="form">
+            <h1>УНИВЕРСАЛЬНАЯ ТОРГОВАЯ СИСТЕМА</h1>
+            <input type="text" placeholder="Ваше имя" title="info"><br>
+            <input type="text" placeholder="Email" title="info"><br>
+            <input type="text" placeholder="Телефон" title="info"><br>
+            <form action="maket.html" method="post">
+                <input type="submit" name="btn" id="button" value="Регистрация">
+            </form>
+        </div>
+    </div>
+    <h1 class="maintext">О нашей супер компании</h1>
+    <div class="main">
+        <img src="Слой 7 копия.png" alt="">
+        <div class="maintext1">
+            <p>
+                Торговый робот представляет собой алгоритм, по которому обнаруживаются и открываются наиболее надежные сделки на такие активы, как акции, валютные пары, индексы и т.д. В качестве примера можно привести робота "Optimal Options". Он заключает сделки по указанным активам с прибыльностью, которая искушает даже самых опытных трейдеров.
+            </p><br>
+            <a href="#">подробнее</a>
+        </div>
+    </div>
+    <h1 class="plnttxt">Услуги</h1>
+    <div class="container1">
+        <div>
+            <img src="Слой 12.png" alt="">
+            <p>
+                Бесплатные сигналы для торговли бинарными опционами
+            </p>
+        </div>
+        <div>
+            <img src="Слой 11.png" alt="">
+            <p>
+                Бесплатные сигналы для трейдеров Форекс
+            </p>
+        </div>
+        <div>
+            <img src="Слой 13.png" alt="">
+            <p>
+                Бесплатные сигналы для торговли криптовалютами
+            </p>
+        </div>
+    </div>
+    <img src="Слой 14.png" alt="" id="planet">
+    <div class="white"></div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="ftr1">
+            <img src="Слой 6 копия.png" alt="">
+            <div class="hd3">
+                <a href=""><img src="Слой 2 (1).png" alt=""></a>
+                <a href=""><img src="Слой 3 (1).png" alt=""></a>
+                <a href=""><img src="Слой 4 (1).png" alt=""></a>
+            </div>
+        </div>
+        <div>
+            <div class="ftr">
+                <a href="#" class="link">О нас</a>
+                <a href="#" class="link">Услуги</a>
+                <a href="#" class="link">Преимущества</a>
+                <a href="#" class="link">Отзывы</a>
+                <a href="#" class="link">Контакты</a>
+            </div>
+            <p>© 2001 – 2018 Chevron Corporation. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
